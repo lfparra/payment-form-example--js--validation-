@@ -19,13 +19,12 @@ let cancelButton = document.getElementById("cancelButton");
 let alerta = document.getElementById("alerta");
 alerta.style.display = "none";
 
-
 formulario.addEventListener("submit", function(evento){
     
     let mensajeAlerta = "";
     evento.preventDefault();
     
-    if (inputCard.value === "" || !Number(inputCard.value)){
+    if (inputCard.value ==="" || !Number(inputCard.value)){
         inputCard.style.backgroundColor = "#f8d7da";
         inputCard.style.borderColor = "#f5c6cb";
         mensajeAlerta += "Missing " + inputCard.name +": only number" + "<br>"
